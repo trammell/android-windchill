@@ -1,6 +1,7 @@
 
-   SDKLIB  := /usr/local/lib/android-sdk-linux_86/tools/
-   ANDROID := $(SDKLIB)/android
+   SDKLIB    := /usr/local/lib/android-sdk-linux_86/tools/
+   ANDROID   := $(SDKLIB)/android
+   JAVA_HOME := /usr/lib/jvm/java-1.6.0-openjdk-1.6.0/lib/
 
 project:
 	$(ANDROID) create project \
@@ -9,3 +10,8 @@ project:
 		--path ./HelloWorld \
 		--activity MyAndroidAppActivity \
 		--package com.example.helloworld
+
+debug:
+	cd HelloWorld; JAVA_HOME=$(JAVA_HOME) ant debug
+
+
