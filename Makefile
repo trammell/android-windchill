@@ -16,4 +16,5 @@ debug:
 
 install:
 	cd HelloWorld; ant install
+	cd HelloWorldXML; ant install
 
