@@ -12,9 +12,13 @@ project:
 		--package com.example.helloworld
 
 debug:
-	cd HelloWorld; JAVA_HOME=$(JAVA_HOME) ant debug
+	cd HelloWorld; ant debug
+	cd HelloWorldXML; ant debug
 
 install:
 	cd HelloWorld; ant install
 	cd HelloWorldXML; ant install
+
+start:
+	emulator -avd avd1
 
