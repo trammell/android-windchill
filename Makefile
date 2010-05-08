@@ -14,3 +14,6 @@ project:
 debug:
 	cd HelloWorld; JAVA_HOME=$(JAVA_HOME) ant debug
 
+install:
+	cd HelloWorld; ant install
+
