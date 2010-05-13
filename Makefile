@@ -6,18 +6,16 @@
 project:
 	$(ANDROID) create project \
 		--target 1 \
-		--name HelloWorld \
-		--path ./HelloWorld \
-		--activity MyAndroidAppActivity \
-		--package com.example.helloworld
+		--name WindChill \
+		--path ./WindChill \
+		--activity WindChill \
+		--package com.johntrammell.WindChill
 
 debug:
-	cd HelloWorld; ant debug
-	cd HelloWorldXML; ant debug
+	cd WindChill; ant debug
 
 install:
-	cd HelloWorld; ant install
-	cd HelloWorldXML; ant install
+	cd WindChill; ant install
 
 start:
 	emulator -avd avd1
